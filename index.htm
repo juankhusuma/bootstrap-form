@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 Bootstrap-Form-Page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid ms-5">
+        <a class="navbar-brand" href="#">
+          <i class="h1 fa-solid fa-bicycle me-2"></i>
+          <span class="h1 fw-semibold">The Bike Club</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse ms-auto"
+          id="navbarSupportedContent"
+        >
+          <ul class="mb-2 navbar-nav ms-auto mb-lg-0 me-3">
+            <li class="nav-item ms-3">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-home me-2"></i>
+                <span> Home </span>
+              </a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-bicycle me-2"></i>
+                <span> Bikes </span>
+              </a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-circle-info me-2"></i>
+                <span> About </span>
+              </a>
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link bg-danger px-3 rounded-3 text-light fw-bold"
+                href="#"
+              >
+                <span> Join Now </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container sign-up d-flex justify-content-center mt-5">
+        <div class="sign-up__wrap">
+          <form
+            action="#"
+            class="sign-up__form my-5 rounded-4 p-5 form-inline bg-secondary"
+          >
+            <div class="form-unit full">
+              <h1 class="sign-up__title">Sign Up</h1>
+              <p class="mt-4">
+                Sign up now to receive exclusive member deals early access to
+                Bike Club event!
+              </p>
+            </div>
+
+            <div class="row my-4">
+              <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fName"
+                  placeholder=" "
+                />
+                <label for="fName" class="ps-4">First name</label>
+              </div>
+              <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lName"
+                  name="lName"
+                  placeholder=" "
+                />
+                <label class="ps-4" for="lName">Last name</label>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="fName"
+                  name="fName"
+                  placeholder=" "
+                />
+                <label for="fName" class="ps-4">Address</label>
+              </div>
+              <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="lName"
+                  name="lName"
+                  placeholder=" "
+                />
+                <label class="ps-4" for="lName">Address Line 2</label>
+              </div>
+            </div>
+            <div class="mb-4 row">
+              <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="lName"
+                  name="lName"
+                  placeholder=" "
+                />
+                <label class="ps-4" for="lName">City</label>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <span class="row">
+                  <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                    <select
+                      class="form-select"
+                      type="text"
+                      id="fName"
+                      name="fName"
+                      placeholder=" "
+                    >
+                      <option value="ontario" selected>Ontario</option>
+                      <option value="quebec">Quebec</option>
+                      <option value="montreal">Montreal</option>
+                    </select>
+                    <label class="ps-4" for="fName">Province</label>
+                  </div>
+                  <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                    <input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder=" "
+                    />
+                    <label class="ps-4" for="email">Postal Code</label>
+                  </div>
+                </span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder=" "
+                />
+                <label class="ps-4" for="tel">Email</label>
+              </div>
+              <div class="form-floating col-lg-6 col-sm-12 mb-2">
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder=" "
+                />
+                <label for="password" class="ps-4">Password</label>
+              </div>
+            </div>
+
+            <div class="mt-4 form-check checkbox-wrap">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="permission"
+                name="permission"
+              />
+              <label class="form-check-label" for="permission"
+                >By checking you agree to the
+                <a href="#" class="text-danger">Term of Services</a>
+              </label>
+            </div>
+
+            <div class="form-unit full mt-4">
+              <input
+                class="btn btn-danger px-3 py-2"
+                type="submit"
+                value="Sign-up"
+              />
+            </div>
+          </form>
+
+          <div class="sign-up__image"></div>
+        </div>
+      </div>
+
+      <script src="./js/bootstrap.bundle.min.js"></script>
+    </section>
+
+    <footer class="d-flex flex-wrap justify-content-around bg-primary pt-4">
+      <h1 class="text-light">
+        <i class="h3 fa-solid fa-bicycle me-2"></i
+        ><span class="h3 fw-semibold">The Bike Club</span>
+      </h1>
+      <div class="d-flex flex-column text-light">
+        <h3 class="fw-semibold ms-4">Contact</h3>
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone me-3 mb-3"></i><span>613-123-4567</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-bicycle me-3 mb-3"></i
+            ><span>hello@thebikeclub.ca</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot me-3 mb-3"></i>
+            <span>123 Fake St, Ottawa, ON K1B 2C3</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
